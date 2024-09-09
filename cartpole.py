@@ -8,7 +8,7 @@ env = gym.make('CartPole-v1')
 # Set the Q-learning parameters
 learning_rate = 0.1
 discount_factor = 0.99
-epsilon = 0.1  # Epsilon-greedy policy
+epsilon = 0.1  
 num_episodes = 1000
 max_steps = 100
 
@@ -62,5 +62,4 @@ with open('q_table_cartpole.pkl', 'wb') as f:
 
 print("Training finished and Q-table saved!")
 
-# Close the environment
 env.close()
